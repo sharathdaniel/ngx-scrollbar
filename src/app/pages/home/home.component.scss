@@ -1,0 +1,46 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+}
+
+.app-l-content-wrap {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  column-gap: 16px;
+}
+
+aside {
+  flex-shrink: 0;
+  width: 320px;
+  height: 100%;
+  background-color: chocolate;
+}
+
+section {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+}
+
+.app-c-filter-row {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.filter-item {
+  flex-shrink: 0;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: aqua;
+}
+
+.truncate {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
