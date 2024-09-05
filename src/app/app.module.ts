@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgScrollbarModule } from 'ngx-scrollbar';
+import { NgScrollReached, NgScrollDropped } from 'ngx-scrollbar/reached-event';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +17,9 @@ import { HomeComponent } from './pages/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    NgScrollReached,
+    NgScrollDropped
   ],
   providers: [],
   bootstrap: [AppComponent]

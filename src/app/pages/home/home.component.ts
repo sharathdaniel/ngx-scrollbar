@@ -9,4 +9,12 @@ export class HomeComponent {
 
   range = Array(50);
 
+  onTopDropped() {
+    console.log("Dropped top");
+  }
+
+  onBottomReached() {
+    console.log("Reached bottom");
+  }
+
 }
